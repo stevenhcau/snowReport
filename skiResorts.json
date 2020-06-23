@@ -1,0 +1,187 @@
+{
+    "lakeLouise" : {
+        "name": "Lake Louise Ski Resort",
+        "country": "Canada", 
+        "lat": 51.26315, 
+        "lon": -116.162097
+    },
+    "sunshine" : {
+        "name": "Sunshine Ski Resort",
+        "country": "Canada", 
+        "lat": 51.115314, 
+        "lon": -115.763297
+    },
+    "castleMountain" : {
+        "name": "Castle Mountain Resort",
+        "country": "Canada", 
+        "lat": 49.319259, 
+        "lon": -114.412572
+    }, 
+    "fernie" : {
+        "name": "Fernie Alpine Resort",
+        "country": "Canada", 
+        "lat": 49.463979, 
+        "lon": -115.086598
+    },
+    "apex" : {
+        "name": "Apex Mountain Resort",
+        "country": "Canada", 
+        "lat": 49.390834, 
+        "lon": -119.903926
+    },
+    "bigWhite" : {
+        "name": "Big Sky Mountain Resort",
+        "country": "Canada", 
+        "lat": 49.721773, 
+        "lon": -118.926579
+    },    
+    "revelstoke" : {
+        "name": "Revelstoke Mountain Resort",
+        "country": "Canada", 
+        "lat": 50.958326, 
+        "lon": -118.163771
+    },
+    "whistler" : {
+        "name": "Whistler Blackcomb",
+        "country": "Canada", 
+        "lat": 50.059744, 
+        "lon": -122.956944
+    },
+    "nakiska" : {
+        "name": "Nakiska Ski Resort",
+        "country": "Canada", 
+        "lat": 50.942846, 
+        "lon": -115.151099
+    },
+    "norquay" : {
+        "name": "Mount Norquay", 
+        "country": "Canada",
+        "lat": 51.203051, 
+        "lon": -115.597784
+    },
+    "kimberley" : {
+        "name": "Kimberley Alpine Resort", 
+        "country": "Canada",
+        "lat": 49.688148, 
+        "lon": -116.004384
+    },
+    "kickingHorse" : {
+        "name": "Kicking Horse Mountain Resort",
+        "country": "Canada", 
+        "lat": 51.297696, 
+        "lon": -117.048273
+    },
+    "panorama" : {
+        "name": "Panorama Mountain Resort",
+        "country": "Canada", 
+        "lat": 50.460531, 
+        "lon": -116.238158
+    },
+    "aspen" : {
+        "name": "Aspen Mountain Ski Resort", 
+        "country": "USA",
+        "lat": 39.186396, 
+        "lon": -106.818280
+    },
+    "alta" : {
+        "name": "Alta Ski Area",
+        "country": "USA", 
+        "lat": 40.588519, 
+        "lon": -111.638603
+    },
+    "beaverCreek" : {
+        "name": "Beaver Creek Resort",
+        "country": "USA", 
+        "lat": 39.604452, 
+        "lon": -106.516700
+    },
+    "bigSky" : {
+        "name": "Big Sky Ski Resort",
+        "country": "USA", 
+        "lat": 45.276455, 
+        "lon": -111.333813
+    },
+    "breckenridge" : {
+        "name": "Breckenridge Ski Resort",
+        "country": "USA", 
+        "lat": 39.480358, 
+        "lon": -106.066651
+    },
+    "copper" : {
+        "name": "Copper Mountain",
+        "country": "USA", 
+        "lat": 39.502162, 
+        "lon": -106.151010
+    },
+    "deerValley" : {
+        "name": "Deer Valley Resort",
+        "country": "USA", 
+        "lat": 40.637502, 
+        "lon": -111.478295
+    },
+    "jacksonHole" : {
+        "name": "Jackson Hole Ski Area",
+        "country": "USA", 
+        "lat": 43.596734, 
+        "lon": -110.847434
+    },
+    "killington" : {
+        "name": "Killington Ski Area",
+        "country": "USA", 
+        "lat": 43.626100, 
+        "lon": -72.796687
+    },
+    "mammoth" : {
+        "name": "Mammoth Mountain Ski Area",
+        "country": "USA", 
+        "lat": 37.631516, 
+        "lon": -119.032677
+    },
+    "parkCity" : {
+        "name": "Park City Ski Resort",
+        "country": "USA", 
+        "lat": 40.651441, 
+        "lon": -111.507987
+    },
+    "snowBird" : {
+        "name": "Snowbird Ski Resort",
+        "country": "USA", 
+        "lat": 40.581056 , 
+        "lon": -111.656825
+    },
+    "solitude" : {
+        "name": "Solitude Mountain Resort",
+        "country": "USA", 
+        "lat": 40.619999, 
+        "lon": -111.591874
+    },
+    "squawValley" : {
+        "name": "Squaw Valley Resort",
+        "country": "USA", 
+        "lat": 39.197847, 
+        "lon": -120.235435
+    },
+    "steamBoat" : {
+        "name": "Steamboat Ski Resort",
+        "country": "USA", 
+        "lat": 40.457268, 
+        "lon": -106.804506
+    },
+    "sunValley" : {
+        "name": "Sun Valley Ski Resort",
+        "country": "USA", 
+        "lat": 43.690862, 
+        "lon": -114.350588
+    },
+    "vail" : {
+        "name": "Vail Ski Resort",
+        "country": "USA", 
+        "lat": 39.606285, 
+        "lon": -106.354982
+    },
+    "whiteFish" : {
+        "name": "Whitefish Mountain Resort",
+        "country": "USA", 
+        "lat": 48.480572, 
+        "lon": -114.350271}
+}
