@@ -59,12 +59,149 @@ def addNewResort(resortKey, resortName, country, lat, lon):
         print(f"Added {resortName} successfully")
         return skiResorts
 
-# This method takes the resort name as an arg and returns the dictionary for the resort (contains name, country, lat and lon information)
-def queryByResort(resortSearch):
-    with open(SKI_RESORT_JSON, 'r') as f:
-        resortDictList = json.load(f)
-        resortDict = resortDictList[resortSearch]
-        return resortDict
+# Defines a class to store all the data that can be used for a ski resort
+class Resort:
+    # This method takes the resort name as an arg and returns the dictionary for the resort (contains name, country, lat and lon information)
+    
+    def __init__(self, resortKey):
+        # Opens json file to get location parameters
+        with open(SKI_RESORT_JSON, 'r') as f:
+            resortDictList = json.load(f)
+            resortDict = resortDictList[resortKey]
+        
+        self.name = resortDict["name"]
+        self.lon = resortDict["lon"]
+        self.lat = resortDict["lat"]
+        self.country = resortDict["country"]
+        
+        # Makes a request for 4 day (96hr) forecast and stores in self.weatherJson96hr
+        querystring = {"lat":str(self.lat),"lon":str(self.lon),"unit_system":"si","start_time":"now","fields":"precipitation,temp,feels_like,humidity,wind_speed,wind_direction,precipitation_type,precipitation_probability,sunrise,sunset,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
+        response = requests.request("GET", URL_HOURLY, params=querystring) # ClimaCell: The hourly call provides a global hourly forecast, up to 96 hours (4 days) out, for a specific location.
+        self.weatherJson96hr = json.loads(response.text)
+        
+        self.snowForecast96hr = [self.weatherJson96hr[i]["precipitation"]["value"] for i in range(0, len(self.weatherJson96hr)) if self.weatherJson96hr[i]["precipitation_type"]["value"] == "snow"]
+
+        # Makes a request for realtime forecast and stores in self.weatherJsonTime
+        querystring = {"lat":str(resortDict['lat']),"lon":str(resortDict['lon']),"unit_system":"si","fields":"precipitation,precipitation_type,temp,feels_like,wind_speed,wind_direction,sunrise,sunset,visibility,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
+        response = requests.request("GET", URL_REALTIME, params=querystring)
+        self.weatherJsonRealTime = json.loads(response.text)
+
+        self.nowTime = localTime(self.weatherJsonRealTime["observation_time"]["value"])
+        self.nowTemp = self.weatherJsonRealTime["temp"]["value"]
+        self.nowFeelsLike = self.weatherJsonRealTime["feels_like"]["value"]
+        self.nowPrecipitation = self.weatherJsonRealTime["precipitation"]["value"]
+        self.nowPrecipitationType = self.weatherJsonRealTime["precipitation_type"]["value"]
+        self.nowWindSpeed = self.weatherJsonRealTime["wind_speed"]["value"]
+        self.nowWindDirection = self.weatherJsonRealTime["wind_direction"]["value"]
+        self.nowCloudCover = self.weatherJsonRealTime["cloud_cover"]["value"]
+
+        # Makes a request for 360min forecast and stores in self.weatherJson360Min
+        querystring = {"lat":str(resortDict['lat']),"lon":str(resortDict['lon']),"unit_system":"si","timestep":"5","start_time":"now","fields":"temp,feels_like,humidity,wind_speed,wind_direction,precipitation,precipitation_type,sunrise,sunset,visibility,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
+        response = requests.request("GET", URL_NOWCAST, params=querystring)
+        self.weatherJson360Min = json.loads(response.text)
+
+    # # This method  checks if there is snow in the next 4 days. If the length of list snowForecast96hr is greater than 0, there will be at least some amount of snow in the next 4 days
+    # This method is specific to the 4 hour forecast because of the format of the json data
+    def checkSnow96hr(self):
+        if len(self.snowForecast96hr) > 0:
+            return True
+        else:
+            return False
+
+    # This method calculates the accumulated snow in the next 4 days
+    def totalSnow96hr(self):
+        accumulatedSnow = 0
+        for snow in self.snowForecast96hr:
+            accumulatedSnow = float(snow) + accumulatedSnow
+        return accumulatedSnow
+    
+    # This method  checks if there is snow in the next 4 days and prints it to the user
+    def print4DaySnow(self):
+        if len(self.snowForecast96hr) > 0:
+            print(self.name + ": SNOW IN THE NEXT 4 DAYS")
+            print(f"{self.totalSnow96hr():.2f} mm of snow")
+            print('')
+        else:
+            print(self.name + ": NO SNOW IN THE NEXT 4 DAYS")
+            print('')
+
+    # This method takes the return values of queryByResort() and realTimeJson() as arguments and prints current forecast information
+    def printRealTimeWeather(self):
+        print(f'Location: {self.name}')
+        print(f'Time: {self.nowTime}')
+        print(f'Temperature: {self.nowTemp}°C')
+        print(f'Feels Like: {self.nowFeelsLike}°C')
+        print(f'Precipitation: {self.nowPrecipitation}mm')
+        print(f'Precipitation Type: {self.nowPrecipitationType}')
+        print(f'Wind Speed: {self.nowWindSpeed}m/s')
+        print(f'Wind Direction: {self.nowWindDirection}° (0° is North)')
+        print(f'Cloud Cover: {self.nowCloudCover}m')
+    # This method takes a weatherJson as an input and then plots the temperature against observation time
+
+    def plotTemp(self, forecast):
+        if forecast == "96hr":
+            x = [localTime(self.weatherJson96hr[i]["observation_time"]["value"]) for i in range(0, len(self.weatherJson96hr))]
+            y = [self.weatherJson96hr[i]['temp']["value"] for i in range(0, len(self.weatherJson96hr))]
+        elif forecast == "360min":
+            x = [localTime(self.weatherJson360Min[i]["observation_time"]["value"]) for i in range(0, len(self.weatherJson360Min))]
+            y = [self.weatherJson360Min[i]['temp']["value"] for i in range(0, len(self.weatherJson360Min))]
+        
+        # Step through the temperatures to y limit for temperatures. The lower or upper limit must always be 0
+       
+        if min(y) < -30:
+            ymin = -40
+        elif min(y) < -20:
+            ymin = -30
+        elif min(y) < -10:
+            ymin = -20
+        elif min(y) < 0:
+            ymin = -10
+        else:
+            ymin = 0
+        
+        if max(y) > 30:
+            ymax = 40
+        elif max(y) > 20:
+            ymax = 30
+        elif max(y) > 10:
+            ymax = 20
+        elif max(y) > 0:
+            ymax = 10
+        else:
+            ymax = 0
+
+        plt.style.use('ggplot') 
+        plt.plot(x, y, marker = 'o', linestyle = '-')
+        plt.title('Temperature (°C) vs. Time')
+
+        # Set y axis scale and x and y labels
+        plt.ylim(ymin, ymax)
+        plt.xlabel('Observation Time')
+        plt.ylabel('Temperature (°C)')
+        plt.gcf().set_size_inches(12,7)
+
+        plt.show()
+
+    # This method takes a weatherJson as an input and then plots the preciptation amount against observation time
+    def plotPrecipitation(self, forecast):
+        if forecast == "96hr":
+            x = [localTime(self.weatherJson96hr[i]["observation_time"]["value"]) for i in range(0, len(self.weatherJson96hr))]
+            y = [self.weatherJson96hr[i]['precipitation']["value"] for i in range(0, len(self.weatherJson96hr))]
+        elif forecast == "360min":
+            x = [localTime(self.weatherJson360Min[i]["observation_time"]["value"]) for i in range(0, len(self.weatherJson360Min))]
+            y = [self.weatherJson360Min[i]['precipitation']["value"] for i in range(0, len(self.weatherJson360Min))]
+
+        plt.style.use('ggplot')
+        plt.plot(x, y, marker = 'o', linestyle = '-')
+        plt.title('Precipitation (mm) vs. Time')
+
+        # Set y axis scale and x and y labels
+        plt.xlabel('Observation Time')
+        plt.ylabel('Preciptation (mm)')
+        plt.gcf().set_size_inches(12,7)
+
+        plt.show() 
+
 # This method takes a country as an arg and returns a list of dicts of the resorts in that country (contains a list of dicts containing name, country, lat and lon information)
 def queryByCountry(country):
     with open(SKI_RESORT_JSON, 'r') as f:
@@ -72,136 +209,15 @@ def queryByCountry(country):
         resortsInCountry = [resortDictList[resort] for resort in resortDictList if resortDictList[resort]["country"] == country] 
         return resortsInCountry
 
-# This API call gets information for every hour, resulting in a dataset of 108
-# This method takes a dictionary containing the location information as an argument and retrieves the json from the API
-def forecast96hr(resortDict): 
-    querystring = {"lat":str(resortDict['lat']),"lon":str(resortDict['lon']),"unit_system":"si","start_time":"now","fields":"precipitation,temp,feels_like,humidity,wind_speed,wind_direction,precipitation_type,precipitation_probability,sunrise,sunset,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
-    response = requests.request("GET", URL_HOURLY, params=querystring) # ClimaCell: The hourly call provides a global hourly forecast, up to 96 hours (4 days) out, for a specific location.
-    weatherJson96hr = json.loads(response.text)
-    return weatherJson96hr
-
-# This method determines if there is snow in the 4 hour forecast. If the snowAmount is greater than 0, there will be at least some amount of snow in the next 4 days
-# This method is specific to the 4 hour forecast because of the format of the json data
-def checkForSnow(weatherJson96hr):
-    snowAmount = [weatherJson96hr[i]["precipitation"]["value"] for i in range(0, len(weatherJson96hr)) if weatherJson96hr[i]["precipitation_type"]["value"] == "snow"]
-    if len(snowAmount) > 0:
-        return True
-    else:
-        return False
-
-# This method takes the json data for the next 4 days and prints the amount of snow expected
-def snowAmount96hr(weatherJson96hr):
-    snowAmount = [weatherJson96hr[i]["precipitation"]["value"] for i in range(0, len(weatherJson96hr)) if weatherJson96hr[i]["precipitation_type"]["value"] == "snow"]
-    accumulatedSnow = 0
-    for snow in snowAmount:
-        accumulatedSnow = float(snow) + accumulatedSnow
-    return accumulatedSnow
-
-# This method takes the return value of queryByResort() and weatherJson96hr() and checks if there is snow in the next 4 days
-def display4DaySnow(resortDict, weatherJson96hr):
-    if checkForSnow(weatherJson96hr) is True:
-        print(resortDict["name"] + ": SNOW IN THE NEXT 4 DAYS")
-        print(f"{snowAmount96hr(weatherJson96hr):.2f} mm of snow")
-        print('')
-    else:
-        print(resortDict["name"] + ": NO SNOW IN THE NEXT 4 DAYS")
-        print('')
-
-# This method takes the string of the country (only "Canada" or "USA" currently) as an arg and checks every resort in the country as listed in the json file to see if there is snow
-def printForecast96hrByCountry(country):
-    for resort in queryByCountry(country):
-        display4DaySnow(resort, forecast96hr(resort))
-
-# ClimaCell: The realtime call provides observational data at the present time, down to the minute, for a specific location.
-# This method takes the return from queryByResort() as an argument and returns a json data
-def realTimeJson(resortDict):
-    querystring = {"lat":str(resortDict['lat']),"lon":str(resortDict['lon']),"unit_system":"si","fields":"precipitation,precipitation_type,temp,feels_like,wind_speed,wind_direction,sunrise,sunset,visibility,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
-    response = requests.request("GET", URL_REALTIME, params=querystring)
-    weatherJsonRealTime = json.loads(response.text)
-    return weatherJsonRealTime
-
-# This method takes the return values of queryByResort() and realTimeJson() as arguments and prints current forecast information
-def printRealTimeWeather(resortDict, weatherJsonRealTime):
-    print(f'Location: {resortDict["name"]}')
-    print(f'Time: {localTime(weatherJsonRealTime["observation_time"]["value"])}')
-    print(f'Temperature: {weatherJsonRealTime["temp"]["value"]}°C')
-    print(f'Feels Like: {weatherJsonRealTime["feels_like"]["value"]}°C')
-    print(f'Precipitation: {weatherJsonRealTime["precipitation"]["value"]}mm')
-    print(f'Precipitation Type: {weatherJsonRealTime["precipitation_type"]["value"]}')
-    print(f'Wind Speed: {weatherJsonRealTime["wind_speed"]["value"]}m/s')
-    print(f'Wind Direction: {weatherJsonRealTime["wind_direction"]["value"]}° (0° is North)')
-    print(f'Cloud Cover: {weatherJsonRealTime["cloud_cover"]["value"]}m')
-
-# ClimaCell: The nowcast call provides forecasting data on a minute-­by-­minute basis, based on ClimaCell’s proprietary sensing technology and models.
-# This API call asks for information for every 5 minutes, resulting in a data set of 72 for a total of 360 minutes
-# This method takes a dictionary containing the location information as an argument and retrieves the json from the API
-def forecast360min(resortDict):
-    querystring = {"lat":str(resortDict['lat']),"lon":str(resortDict['lon']),"unit_system":"si","timestep":"5","start_time":"now","fields":"temp,feels_like,humidity,wind_speed,wind_direction,precipitation,precipitation_type,sunrise,sunset,visibility,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
-    response = requests.request("GET", URL_NOWCAST, params=querystring)
-    weatherJson360Min = json.loads(response.text)
-    return weatherJson360Min
-
-# This method takes a weatherJson as an input and then plots the temperature against observation time
-def plotTemp(weatherJson):
-    x = [localTime(weatherJson[i]["observation_time"]["value"]) for i in range(0, len(weatherJson))]
-    y = [weatherJson[i]['temp']["value"] for i in range(0, len(weatherJson))]
-
-    # Step through the temperatures to y limit for temperatures. The lower or upper limit must always be 0
-    if min(y) > 0:
-        ymin = 0
-    elif min(y) < -30:
-        ymin = -40
-    elif min(y) < -20:
-        ymin = -30
-    elif min(y) < -10:
-        ymin = -20
-    elif min(y) < 0:
-        ymin = -10
-    
-    if max(y) > 30:
-        ymax = 40
-    elif max(y) > 20:
-        ymax = 30
-    elif max(y) > 10:
-        ymax = 20
-    elif max(y) > 0:
-        ymax = 10
-    else:
-        ymax = 0
-
-    plt.style.use('ggplot') 
-    plt.plot(x, y, marker = 'o', linestyle = '-')
-    plt.title('Temperature (°C) vs. Time')
-
-    # Set y axis scale and x and y labels
-    plt.ylim(ymin, ymax)
-    plt.xlabel('Observation Time')
-    plt.ylabel('Temperature (°C)')
-    plt.gcf().set_size_inches(12,7)
-
-    plt.show()
-
-# This method takes a weatherJson as an input and then plots the preciptation amount against observation time
-def plotPrecipitation(weatherJson):
-    x = [localTime(weatherJson[i]["observation_time"]["value"]) for i in range(0, len(weatherJson))]
-    y = [weatherJson[i]['precipitation']["value"] for i in range(0, len(weatherJson))]
-    plt.style.use('ggplot')
-    plt.plot(x, y, marker = 'o', linestyle = '-')
-    plt.title('Precipitation (mm) vs. Time')
-
-    # Set y axis scale and x and y labels
-    plt.xlabel('Observation Time')
-    plt.ylabel('Preciptation (mm)')
-    plt.gcf().set_size_inches(12,7)
-
-    plt.show()
-
-plotTemp(forecast360min(queryByResort("sunshine")))
+# TODO: Create a method takes the string of the country (only "Canada" or "USA" currently) as an arg and checks every resort in the country as listed in the json file to see if there is snow
 
 # TODO: Open JSON file and get filter through the resorts, pick which resorts to search for data for based on location requested
 
 # TODO: Create main function that grabs CLI args, then forecasts based on args
 
-# forecast96hr(sunshine)
-# forecast96hr(revelstoke)
-# forecast96hr(lakeLouise)
+
+resort = Resort("lakeLouise")
+resort.printRealTimeWeather()
+print('')
+resort.print4DaySnow()
+resort.plotTemp("96hr")
