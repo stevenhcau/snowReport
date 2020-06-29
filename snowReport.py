@@ -59,10 +59,8 @@ def addNewResort(resortKey, resortName, country, lat, lon):
         print(f"Added {resortName} successfully")
         return skiResorts
 
-# Defines a class to store all the data that can be used for a ski resort
+# Defines a class "Resort" to handle the attributes and methods for each ski resort
 class Resort:
-    # This method takes the resort name as an arg and returns the dictionary for the resort (contains name, country, lat and lon information)
-    
     def __init__(self, resortKey):
         # Opens json file to get location parameters
         with open(SKI_RESORT_JSON, 'r') as f:
@@ -100,7 +98,7 @@ class Resort:
         response = requests.request("GET", URL_NOWCAST, params=querystring)
         self.weatherJson360Min = json.loads(response.text)
 
-    # # This method  checks if there is snow in the next 4 days. If the length of list snowForecast96hr is greater than 0, there will be at least some amount of snow in the next 4 days
+    # This method  checks if there is snow in the next 4 days. If the length of list snowForecast96hr is greater than 0, there will be at least some amount of snow in the next 4 days
     # This method is specific to the 4 hour forecast because of the format of the json data
     def checkSnow96hr(self):
         if len(self.snowForecast96hr) > 0:
@@ -203,21 +201,34 @@ class Resort:
         plt.show() 
 
 # This method takes a country as an arg and returns a list of dicts of the resorts in that country (contains a list of dicts containing name, country, lat and lon information)
+def resortsInCountry(country):
+    with open(SKI_RESORT_JSON, 'r') as f:
+        resortDictList = json.load(f)
+        resortsInCountry = [resortDictList[resort]["name"] for resort in resortDictList if resortDictList[resort]["country"].lower() == country.lower()]
+        return resortsInCountry
+
+# Create a method takes the string of the country (only "Canada" or "USA" currently) as an arg and checks every resort in the country as listed in the json file to see if there is snow
+# TODO: Create a thread to make this run faster
 def queryByCountry(country):
     with open(SKI_RESORT_JSON, 'r') as f:
         resortDictList = json.load(f)
-        resortsInCountry = [resortDictList[resort] for resort in resortDictList if resortDictList[resort]["country"] == country] 
-        return resortsInCountry
+        for key in resortDictList:
+            if resortDictList[key]["country"].lower() == country.lower():
+                resortObj = Resort(key)
+                resortObj.print4DaySnow()
 
-# TODO: Create a method takes the string of the country (only "Canada" or "USA" currently) as an arg and checks every resort in the country as listed in the json file to see if there is snow
+# TODO: Open JSON file and get filter through the resorts, pick which resorts to search for data for based on location requested    
 
-# TODO: Open JSON file and get filter through the resorts, pick which resorts to search for data for based on location requested
+# Create main function that grabs CLI args, then forecasts based on args
+# First arg will take usage (realtime/96hr/360min)
+# Second arg will take the keylist or resort
 
-# TODO: Create main function that grabs CLI args, then forecasts based on args
+# def main():
+#     usage = sys.argv[1]
+#     filter = sys.argv[2].lower() # location filter: favorites, alberta, canada
 
 
-resort = Resort("lakeLouise")
-resort.printRealTimeWeather()
-print('')
-resort.print4DaySnow()
-resort.plotTemp("96hr")
+# if __name__ = '__main__':
+#     main()
+
+queryByCountry("canada")
