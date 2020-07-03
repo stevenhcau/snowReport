@@ -217,18 +217,74 @@ def queryByCountry(country):
                 resortObj = Resort(key)
                 resortObj.print4DaySnow()
 
-# TODO: Open JSON file and get filter through the resorts, pick which resorts to search for data for based on location requested    
-
-# Create main function that grabs CLI args, then forecasts based on args
+# Main function that grabs CLI args, then forecasts based on args
 # First arg will take usage (realtime/96hr/360min)
 # Second arg will take the keylist or resort
 
-# def main():
-#     usage = sys.argv[1]
-#     filter = sys.argv[2].lower() # location filter: favorites, alberta, canada
+def main():
+    try:
+        usage = sys.argv[1].lower()
+    except:
+        print("Not run from command line")
+        print("Please enter usage scenario")
+        usage = input().lower()
+        print('')    
+    try:
+        resortFilter = sys.argv[2].lower() # location filter: favorites, alberta, canada, usa
+    except:
+        print("Not run from command line")
+        print("Please enter filter request")
+        resortFilter = input().lower()
+        print('')        
 
+    # TODO: Create try and except for the arguments
+    favorites = ["lakeLouise", "sunshine", "fernie", "revelstoke", "whistler"]
+    albertaResorts = ["lakeLouise", "sunshine", "nakiska", "castleMountain", "norquay"]
 
-# if __name__ = '__main__':
-#     main()
+    if resortFilter.lower() == "favorites":
+        if usage == "realtime":
+            for resort in favorites:
+                resortObj = Resort(resort)
+                resortObj.printRealTimeWeather
+        elif usage == "4day":
+            for resort in favorites:
+                resortObj = Resort(resort)
+                resortObj.print4DaySnow
+        elif usage == "96hr":
+            for resort in favorites:
+                resortObj = Resort(resort)
+                resortObj.print4DaySnow
+        elif usage == "360min":
+            for resort in favorites:
+                resortObj = Resort(resort)
+                resortObj.plotTemp()
+                resortObj.plotPrecipitation()
 
-queryByCountry("canada")
+    elif resortFilter.lower() == "alberta":
+        if usage == "realtime":
+            for resort in albertaResorts:
+                resortObj = Resort(resort)
+                resortObj.printRealTimeWeather
+        elif usage == "4day":
+            for resort in albertaResorts:
+                resortObj = Resort(resort)
+                resortObj.print4DaySnow
+        elif usage == "96hr":
+            for resort in albertaResorts:
+                resortObj = Resort(resort)
+                resortObj.print4DaySnow
+        elif usage == "360min":
+            for resort in albertaResorts:
+                resortObj = Resort(resort)
+                resortObj.plotTemp()
+    elif usage == "canada":
+        queryByCountry("Canada")
+    
+    elif usage == "usa":
+        queryByCountry("USA")
+
+    else:
+        print("")
+
+if __name__ == '__main__':
+    main()
