@@ -8,6 +8,7 @@
 
 # QUESTION: Is this alphabetical, do you do it based on module name?
 
+
 from datetime import datetime
 import dateutil.parser as dp
 import json, os, requests
@@ -77,7 +78,9 @@ class Resort:
         response = requests.request("GET", URL_HOURLY, params=querystring) # ClimaCell: The hourly call provides a global hourly forecast, up to 96 hours (4 days) out, for a specific location.
         self.weatherJson96hr = json.loads(response.text)
         
+        # This is causing an error - if there is no snow then in returns an empty list
         self.snowForecast96hr = [self.weatherJson96hr[i]["precipitation"]["value"] for i in range(0, len(self.weatherJson96hr)) if self.weatherJson96hr[i]["precipitation_type"]["value"] == "snow"]
+         
 
         # Makes a request for realtime forecast and stores in self.weatherJsonTime
         querystring = {"lat":str(resortDict['lat']),"lon":str(resortDict['lon']),"unit_system":"si","fields":"precipitation,precipitation_type,temp,feels_like,wind_speed,wind_direction,sunrise,sunset,visibility,cloud_cover,cloud_base,weather_code","apikey":CLIMACELL_KEY}
@@ -221,70 +224,74 @@ def queryByCountry(country):
 # First arg will take usage (realtime/96hr/360min)
 # Second arg will take the keylist or resort
 
-def main():
-    try:
-        usage = sys.argv[1].lower()
-    except:
-        print("Not run from command line")
-        print("Please enter usage scenario")
-        usage = input().lower()
-        print('')    
-    try:
-        resortFilter = sys.argv[2].lower() # location filter: favorites, alberta, canada, usa
-    except:
-        print("Not run from command line")
-        print("Please enter filter request")
-        resortFilter = input().lower()
-        print('')        
+queryByCountry("Canada")
 
-    # TODO: Create try and except for the arguments
-    favorites = ["lakeLouise", "sunshine", "fernie", "revelstoke", "whistler"]
-    albertaResorts = ["lakeLouise", "sunshine", "nakiska", "castleMountain", "norquay"]
+# def main():
+#     try:
+#         usage = sys.argv[1].lower()
+#     except:
+#         print("Not run from command line")
+#         print("Please enter usage scenario") # print out the different usage scenario options
+#         usage = input().lower()
+#         print('')    
+#     try:
+#         resortFilter = sys.argv[2].lower() # location filter: favorites, alberta, canada, usa
+#     except:
+#         print("Not run from command line")
+#         print("Please enter filter request") # print out the different filter request
+#         resortFilter = input().lower()
+#         print('')        
 
-    if resortFilter.lower() == "favorites":
-        if usage == "realtime":
-            for resort in favorites:
-                resortObj = Resort(resort)
-                resortObj.printRealTimeWeather
-        elif usage == "4day":
-            for resort in favorites:
-                resortObj = Resort(resort)
-                resortObj.print4DaySnow
-        elif usage == "96hr":
-            for resort in favorites:
-                resortObj = Resort(resort)
-                resortObj.print4DaySnow
-        elif usage == "360min":
-            for resort in favorites:
-                resortObj = Resort(resort)
-                resortObj.plotTemp()
-                resortObj.plotPrecipitation()
+#     # TODO: Create try and except for the arguments
+#     # TODO: Create a function and pass it a list of resorts to execute
+#     favorites = ["lakeLouise", "sunshine", "fernie", "revelstoke", "whistler"]
+#     albertaResorts = ["lakeLouise", "sunshine", "nakiska", "castleMountain", "norquay"]
+#     # Add threads to optimize the request option
 
-    elif resortFilter.lower() == "alberta":
-        if usage == "realtime":
-            for resort in albertaResorts:
-                resortObj = Resort(resort)
-                resortObj.printRealTimeWeather
-        elif usage == "4day":
-            for resort in albertaResorts:
-                resortObj = Resort(resort)
-                resortObj.print4DaySnow
-        elif usage == "96hr":
-            for resort in albertaResorts:
-                resortObj = Resort(resort)
-                resortObj.print4DaySnow
-        elif usage == "360min":
-            for resort in albertaResorts:
-                resortObj = Resort(resort)
-                resortObj.plotTemp()
-    elif usage == "canada":
-        queryByCountry("Canada")
+#     if resortFilter.lower() == "favorites":
+#         if usage == "realtime":
+#             for resort in favorites:
+#                 resortObj = Resort(resort)
+#                 resortObj.printRealTimeWeather
+#         elif usage == "4day": 
+#             for resort in favorites:
+#                 resortObj = Resort(resort)
+#                 resortObj.print4DaySnow
+#         elif usage == "96hr":
+#             for resort in favorites:
+#                 resortObj = Resort(resort)
+#                 resortObj.print4DaySnow
+#         elif usage == "360min":
+#             for resort in favorites:
+#                 resortObj = Resort(resort)
+#                 resortObj.plotTemp()
+#                 resortObj.plotPrecipitation()
+
+#     elif resortFilter.lower() == "alberta":
+#         if usage == "realtime":
+#             for resort in albertaResorts:
+#                 resortObj = Resort(resort)
+#                 resortObj.printRealTimeWeather
+#         elif usage == "4day":
+#             for resort in albertaResorts:
+#                 resortObj = Resort(resort)
+#                 resortObj.print4DaySnow
+#         elif usage == "96hr":
+#             for resort in albertaResorts:
+#                 resortObj = Resort(resort)
+#                 resortObj.print4DaySnow
+#         elif usage == "360min":
+#             for resort in albertaResorts:
+#                 resortObj = Resort(resort)
+#                 resortObj.plotTemp()
+#     elif usage == "canada":
+#         queryByCountry("Canada")
     
-    elif usage == "usa":
-        queryByCountry("USA")
+#     elif usage == "usa":
+#         queryByCountry("USA")
 
-    else:
-        print("")
+#     else:
+#         print("")
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
