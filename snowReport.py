@@ -6,13 +6,13 @@
 # dateutil.parser as dp is used to convert UTC format into datetime format
 # datetime and tzlocal is used to convert UTC timezone into Canada/Mountain Time
 
-# QUESTION: Is this alphabetical, do you do it based on module name?
-
-
+import json
+import os
 from datetime import datetime
+
 import dateutil.parser as dp
-import json, os, requests
 import matplotlib.pyplot as plt
+import requests
 from tzlocal import get_localzone
 
 """
@@ -93,11 +93,17 @@ class Resort:
         )  # ClimaCell: The hourly call provides a global hourly forecast, up to 96 hours (4 days) out, for a specific location.
         self.weatherJson96hr = json.loads(response.text)
 
-        # This is causing an error - if there is no snow then in returns an empty list
+        # FIXED: This is causing an error - if there is no snow then in returns an empty list
+        # I fixed this error by adding an else assigner to the list comprehension, if there is no snow in the forecast then it assigns an int value of 0 to the key in the list
+        # The methods totalSnow96hr and checkSnow96hr have been changed so that they reflect that even if the list is not empty, that does not necessarily mean there is snow in the forecast
+        # Previously those methods checked if the list was longer than a length of 0, if true, then snow should exist
         self.snowForecast96hr = [
-            self.weatherJson96hr[i]["precipitation"]["value"]
+            (
+                self.weatherJson96hr[i]["precipitation"]["value"]
+                if self.weatherJson96hr[i]["precipitation_type"]["value"] == "snow"
+                else 0
+            )
             for i in range(0, len(self.weatherJson96hr))
-            if self.weatherJson96hr[i]["precipitation_type"]["value"] == "snow"
         ]
 
         # Makes a request for realtime forecast and stores in self.weatherJsonTime
@@ -135,20 +141,20 @@ class Resort:
         response = requests.request("GET", URL_NOWCAST, params=querystring)
         self.weatherJson360Min = json.loads(response.text)
 
-    # This method  checks if there is snow in the next 4 days. If the length of list snowForecast96hr is greater than 0, there will be at least some amount of snow in the next 4 days
-    # This method is specific to the 4 hour forecast because of the format of the json data
-    def checkSnow96hr(self):
-        if len(self.snowForecast96hr) > 0:
-            return True
-        else:
-            return False
-
     # This method calculates the accumulated snow in the next 4 days
     def totalSnow96hr(self):
         accumulatedSnow = 0
         for snow in self.snowForecast96hr:
             accumulatedSnow = float(snow) + accumulatedSnow
         return accumulatedSnow
+
+    # This method  checks if there is snow in the next 4 days. If the sum of the values in the list snowForecast96hr is greater than 0, there will be at least some amount of snow in the next 4 days
+    # This method is specific to the 4 hour forecast because of the format of the json data
+    def checkSnow96hr(self):
+        if self.totalSnow96hr() > 0:
+            return True
+        else:
+            return False
 
     # This method  checks if there is snow in the next 4 days and prints it to the user
     def print4DaySnow(self):
