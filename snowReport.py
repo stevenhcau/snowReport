@@ -59,11 +59,14 @@ def addNewResort(resortKey, resortName, country, lat, lon):
         resortKey: {"name": resortName, "country": country, "lat": lat, "lon": lon}
     }
     with open(SKI_RESORT_JSON, "r") as f:
-        skiResorts = json.load(f)
-        print(skiResorts)
-        skiResorts.update(newResortDict)
+        resortJson = json.load(f)
+        resortJson.update(newResortDict)
+
+    with open(SKI_RESORT_JSON, "w") as f:
+        json.dump(resortJson, f, indent=4)
         print(f"Added {resortName} successfully")
-        return skiResorts
+
+    return resortJson
 
 
 # Defines a class "Resort" to handle the attributes and methods for each ski resort
@@ -296,7 +299,7 @@ def queryByCountry(country):
 # First arg will take usage (realtime/96hr/360min)
 # Second arg will take the keylist or resort
 
-queryByCountry("Canada")
+# queryByCountry("Canada")
 
 # def main():
 #     try:

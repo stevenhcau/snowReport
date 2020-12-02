@@ -81,7 +81,7 @@
         "name": "Aspen Mountain Ski Resort",
         "country": "USA",
         "lat": 39.186396,
-        "lon": -106.818280
+        "lon": -106.81828
     },
     "alta": {
         "name": "Alta Ski Area",
@@ -93,7 +93,7 @@
         "name": "Beaver Creek Resort",
         "country": "USA",
         "lat": 39.604452,
-        "lon": -106.516700
+        "lon": -106.5167
     },
     "bigSky": {
         "name": "Big Sky Ski Resort",
@@ -111,7 +111,7 @@
         "name": "Copper Mountain",
         "country": "USA",
         "lat": 39.502162,
-        "lon": -106.151010
+        "lon": -106.15101
     },
     "deerValley": {
         "name": "Deer Valley Resort",
@@ -128,7 +128,7 @@
     "killington": {
         "name": "Killington Ski Area",
         "country": "USA",
-        "lat": 43.626100,
+        "lat": 43.6261,
         "lon": -72.796687
     },
     "mammoth": {
@@ -184,5 +184,11 @@
         "country": "USA",
         "lat": 48.480572,
         "lon": -114.350271
+    },
+    "test_Location (Banff)": {
+        "name": "Banff",
+        "country": "Canada",
+        "lat": "51.1784",
+        "lon": "-115.5708"
     }
 }
