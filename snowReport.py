@@ -69,9 +69,12 @@ def addNewResort(resortKey, resortName, country, lat, lon):
     return resortJson
 
 
+# TODO: Seperate the get requests into different functions and modify the rest of the code as necessary
+
 # Defines a class "Resort" to handle the attributes and methods for each ski resort
 class Resort:
-    def __init__(self, resortKey):
+    # kwargs is created so the user can pass in "96hr", "realtime", and or "360min"
+    def __init__(self, resortKey, **kwargs):
         # Opens json file to get location parameters
         with open(SKI_RESORT_JSON, "r") as f:
             resortDictList = json.load(f)

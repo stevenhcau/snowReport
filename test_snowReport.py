@@ -2,6 +2,7 @@
 
 import datetime
 import json
+from mock import patch
 import os
 import snowReport
 import unittest
@@ -21,6 +22,7 @@ class testSnowReport(unittest.TestCase):
     # This classmethod will also set up an object of our Resort class
     @classmethod
     def setUpClass(cls):
+
         # Opens the existing json file and closes after using it
         with open("skiResorts.json") as f:
             skiResortData = json.load(f)
