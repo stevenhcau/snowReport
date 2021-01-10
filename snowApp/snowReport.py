@@ -88,12 +88,14 @@ def addNewResort(resortKey, resortName, country, lat, lon, *args):
 # Get request modified to only pull the data requested by the user using args
 # Question: are kwargs or args better to use in this situation?
 # Defines a class "Resort" to handle the attributes and methods for each ski resort
-class Resort:
+class Resort():
     # kwargs is created so the user can pass in "96hr", "realtime", and or "360min"
     def __init__(self, resortKey, *args):
         # Checks if the user enters arguments to initiate json files or not
+        self.dataJSON = SKI_RESORT_JSON
+
         if not args:
-            raise Exception("Invalid arg passed. Function arguments must contain one of '360min' and/or '96hr' and/or 'realtime'")
+            raise Exception("Invalid arg passed. Function arguments must contain one of '360min' and/or '96hr' and/or 'realtime'") # Note there is a hidden arg that is called test that does not access the api to do a mock test
 
         # Opens json file to get location parameters
         with open(SKI_RESORT_JSON, "r") as f:
@@ -111,7 +113,6 @@ class Resort:
         # "360min" = 360min
         # "96hr" = 96hr
         for requestItem in args:
-            # Makes a request for realtime forecast and stores in self.weatherJsonTime
             if requestItem == "realtime":
                 querystring = {
                     "lat": str(resortDict["lat"]),
@@ -128,9 +129,7 @@ class Resort:
                 self.nowTemp = self.weatherJsonRealTime["temp"]["value"]
                 self.nowFeelsLike = self.weatherJsonRealTime["feels_like"]["value"]
                 self.nowPrecipitation = self.weatherJsonRealTime["precipitation"]["value"]
-                self.nowPrecipitationType = self.weatherJsonRealTime["precipitation_type"][
-                    "value"
-                ]
+                self.nowPrecipitationType = self.weatherJsonRealTime["precipitation_type"]["value"]
                 self.nowWindSpeed = self.weatherJsonRealTime["wind_speed"]["value"]
                 self.nowWindDirection = self.weatherJsonRealTime["wind_direction"]["value"]
                 self.nowCloudCover = self.weatherJsonRealTime["cloud_cover"]["value"]
