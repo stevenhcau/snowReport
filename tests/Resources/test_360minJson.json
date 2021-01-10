@@ -1,0 +1,4017 @@
+[
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -1.43,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -4.84,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.6,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 59.49,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -1.76,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -5.3,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.66,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 60.13,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:09:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -2.09,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -5.76,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.73,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 60.78,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:14:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -2.42,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -6.22,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.8,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 61.42,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:19:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -2.75,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -6.69,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.87,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 62.07,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:24:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -3.08,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -7.15,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.93,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 62.71,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:29:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -3.4,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -7.61,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 63.36,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:34:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -3.73,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -8.07,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.07,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 64.01,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:39:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -4.06,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -8.53,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.14,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 64.65,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:44:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -4.39,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -8.99,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.2,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 65.3,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:49:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -4.72,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -9.46,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.27,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 65.94,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:54:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.05,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -9.92,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.34,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 66.59,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 175.65,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-07T15:38:12.554Z"
+        },
+        "sunset": {
+            "value": "2021-01-07T23:48:01.855Z"
+        },
+        "observation_time": {
+            "value": "2021-01-07T23:59:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.15,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.04,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.34,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 66.79,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.2,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.09,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.33,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 66.89,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:09:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.24,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.13,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.32,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:14:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.29,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.18,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.31,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.1,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:19:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.34,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.23,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.29,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.21,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:24:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.39,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.28,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.28,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.31,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:29:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.44,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.32,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.27,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.42,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:34:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.49,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.37,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.26,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.52,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:39:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.53,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.42,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.25,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.63,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:44:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.58,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.47,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.24,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.73,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:49:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.63,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.51,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.22,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.84,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:54:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.68,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.56,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.21,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 70.3125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 8287,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 67.94,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 186.41,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T00:59:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -5.86,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.76,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.2,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 68.48,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -6.07,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -10.99,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.18,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 69.11,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:09:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -6.27,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -11.23,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.17,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 69.75,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:14:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -6.48,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -11.46,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.15,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 70.38,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:19:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -6.69,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -11.7,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.14,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 71.01,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:24:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -6.9,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -11.93,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.13,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 71.64,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:29:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -7.1,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -12.17,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.11,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 72.28,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:34:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -7.31,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -12.4,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.1,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 72.91,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:39:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -7.52,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -12.64,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.08,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 73.54,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:44:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -7.73,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -12.87,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.07,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 74.17,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:49:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -7.94,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -13.1,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.05,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 74.81,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:54:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -8.14,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -13.34,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3.04,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 78.90625,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5416,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 75.44,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 206.26,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T01:59:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -8.31,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -13.49,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 3,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 75.98,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -8.46,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -13.63,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.96,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 76.5,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:09:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -8.62,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -13.77,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.93,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 77.02,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:14:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -8.77,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -13.91,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.89,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 77.54,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:19:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -8.92,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.04,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.85,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 78.06,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:24:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -9.08,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.18,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.81,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 78.58,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:29:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -9.23,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.32,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.77,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 79.1,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:34:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -9.39,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.45,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.74,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 79.62,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:39:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -9.54,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.59,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.7,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 80.14,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:44:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -9.7,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.73,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.66,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 80.66,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:49:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -9.85,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -14.87,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.62,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 81.18,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:54:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.58,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 81.7,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 241,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T02:59:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.1,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.09,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.56,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 82,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.19,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.17,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.54,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 82.26,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:09:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.28,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.24,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.53,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 82.51,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:14:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.36,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.32,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.51,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 82.77,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:19:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.45,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.4,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.49,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 83.02,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:24:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.54,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.47,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.47,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 83.28,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:29:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.62,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.55,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.45,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 83.53,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:34:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.71,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.63,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.44,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 83.78,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:39:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.8,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.7,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.42,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.04,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:44:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.88,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.78,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.4,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.29,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:49:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -10.97,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.86,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.38,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.55,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:54:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.06,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.93,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.36,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 30.46875,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.8,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 265.36,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T03:59:05.550Z"
+        },
+        "weather_code": {
+            "value": "mostly_clear"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.08,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.95,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.35,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.8,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.08,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.95,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.35,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.74,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:09:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.09,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.95,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.34,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.69,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:14:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.1,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.34,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.63,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:19:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.1,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.33,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.57,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:24:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.11,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.33,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.52,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:29:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.11,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.32,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.46,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:34:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.12,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.32,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.4,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:39:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.12,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.31,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.35,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:44:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.13,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.31,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.29,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:49:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.13,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.3,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.23,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:54:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.14,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -15.94,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.3,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 75.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": 5724,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.18,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 283.03,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T04:59:05.550Z"
+        },
+        "weather_code": {
+            "value": "cloudy"
+        }
+    },
+    {
+        "lat": 51.0447,
+        "lon": -114.066666,
+        "temp": {
+            "value": -11.18,
+            "units": "C"
+        },
+        "feels_like": {
+            "value": -16.02,
+            "units": "C"
+        },
+        "wind_speed": {
+            "value": 2.32,
+            "units": "m/s"
+        },
+        "visibility": {
+            "value": 10,
+            "units": "km"
+        },
+        "precipitation": {
+            "value": 0,
+            "units": "mm/hr"
+        },
+        "cloud_cover": {
+            "value": 0.78125,
+            "units": "%"
+        },
+        "cloud_base": {
+            "value": null,
+            "units": "m"
+        },
+        "humidity": {
+            "value": 84.12,
+            "units": "%"
+        },
+        "wind_direction": {
+            "value": 288.69,
+            "units": "degrees"
+        },
+        "precipitation_type": {
+            "value": "none"
+        },
+        "sunrise": {
+            "value": "2021-01-08T15:37:43.627Z"
+        },
+        "sunset": {
+            "value": "2021-01-08T23:49:20.358Z"
+        },
+        "observation_time": {
+            "value": "2021-01-08T05:04:05.550Z"
+        },
+        "weather_code": {
+            "value": "clear"
+        }
+    }
+]

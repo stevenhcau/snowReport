@@ -1,0 +1,51 @@
+{
+    "lat": 51.0447,
+    "lon": -114.066666,
+    "temp": {
+        "value": -1.31,
+        "units": "C"
+    },
+    "feels_like": {
+        "value": -1.31,
+        "units": "C"
+    },
+    "wind_speed": {
+        "value": 1.13,
+        "units": "m/s"
+    },
+    "visibility": {
+        "value": 10,
+        "units": "km"
+    },
+    "wind_direction": {
+        "value": 262.13,
+        "units": "degrees"
+    },
+    "precipitation": {
+        "value": 0,
+        "units": "mm/hr"
+    },
+    "precipitation_type": {
+        "value": "none"
+    },
+    "cloud_cover": {
+        "value": 0,
+        "units": "%"
+    },
+    "cloud_base": {
+        "value": null,
+        "units": "m"
+    },
+    "sunrise": {
+        "value": "2021-01-07T15:38:12.554Z"
+    },
+    "sunset": {
+        "value": "2021-01-07T23:48:01.855Z"
+    },
+    "weather_code": {
+        "value": "clear"
+    },
+    "observation_time": {
+        "value": "2021-01-07T23:04:06.456Z"
+    }
+}
