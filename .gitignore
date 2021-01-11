@@ -1,6 +1,5 @@
 Project - Snow Report.code-workspace
-COPYskiResorts.json
 __pycache__
-venv
 .vscode/
 notes.txt
+snowReport_env
