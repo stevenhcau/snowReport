@@ -48,11 +48,10 @@ CLIMACELL_KEY = "G6pKgE1QNQqjkSM5XzBZMW5N7cPgxUVy"
 STARRED_RESORTS = ["lakeLouise", "sunshine", "fernie", "revelstoke", "whistler"]
 ALBERTA_RESORTS = ["lakeLouise", "sunshine", "nakiska", "castleMountain", "norquay"]
 
-# Sets the current directory to this folder, this is needed so that the file can find the skiResorts.json file in the current directory
-# This is handled this way because the test_snowReport.py file changes the directory to add it to sys.path
-abspath = os.path.abspath(__file__)
-dname = os.path.dirname(abspath)
-os.chdir(dname)
+
+ABS_PATH = os.path.abspath(__file__)
+D_NAME = os.path.dirname(ABS_PATH)
+
 
 # This method takes the string of a time in ISO 8601 format and converts it to local time using the system timezone
 def localTime(UTCTime):
@@ -97,6 +96,14 @@ def addNewResort(resortKey, resortName, country, lat, lon, *args):
 class Resort():
     # kwargs is created so the user can pass in "96hr", "realtime", and or "360min"
     def __init__(self, resortKey, *args):
+        # Check if you are in the current directory, if not, set it to the current directory
+        currentDir = os.getcwd()
+
+        if currentDir != D_NAME:
+            os.chdir(D_NAME)
+        else:
+            pass
+
         # Checks if the user enters arguments to initiate json files or not
         self.dataJSON = SKI_RESORT_JSON
         self.args = args
@@ -145,7 +152,11 @@ class Resort():
         }
 
         response = requests.request("GET", URL_REALTIME, params=querystring)
-        self.weatherJsonRealTime = json.loads(response.text)
+
+        if response.ok:
+            self.weatherJsonRealTime = json.loads(response.text)
+        else:
+            return "Bad response"
 
         self.nowTime = localTime(self.weatherJsonRealTime["observation_time"]["value"])
         self.nowTemp = self.weatherJsonRealTime["temp"]["value"]
@@ -168,10 +179,16 @@ class Resort():
             "fields": "temp,feels_like,humidity,wind_speed,wind_direction,precipitation,precipitation_type,sunrise,sunset,visibility,cloud_cover,cloud_base,weather_code",
             "apikey": CLIMACELL_KEY,
         }
-        response = requests.request("GET", URL_NOWCAST, params=querystring)
-        self.weatherJson360Min = json.loads(response.text)
-        return self.weatherJson360Min
 
+        response = requests.request("GET", URL_NOWCAST, params=querystring)
+
+        if response.ok:
+            self.weatherJson360Min = json.loads(response.text)
+        else:
+            return "Bad response"
+        
+        return self.weatherJson360Min
+        
     def request96hr(self):
         querystring = {
             "lat": str(self.lat),
@@ -182,7 +199,11 @@ class Resort():
             "apikey": CLIMACELL_KEY,
         }
         response = requests.request("GET", URL_HOURLY, params=querystring)  # ClimaCell: The hourly call provides a global hourly forecast, up to 96 hours (4 days) out, for a specific location.
-        self.weatherJson96hr = json.loads(response.text)
+        if response.ok:
+            self.weatherJson96hr = json.loads(response.text)
+        else:
+            return "Bad response"
+             
         return self.weatherJson96hr
 
      

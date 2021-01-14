@@ -28,14 +28,22 @@ SKI_RESORT_JSON = "skiResorts.json"
 CLIMACELL_KEY = "G6pKgE1QNQqjkSM5XzBZMW5N7cPgxUVy"
 
 # Setting current working directory to ..\tests so that to easily access the resources files
-abspath = os.path.abspath(__file__)
-dname = os.path.dirname(abspath)
-os.chdir(dname)
-
-testJsonPath = os.path.join(abspath, "\\test_skiResorts.json")
+ABS_PATH = os.path.abspath(__file__)
+D_NAME = os.path.dirname(ABS_PATH)
+os.chdir(D_NAME)
 
 # To determine snowAppPath
 snowAppPath = "..\\snowApp\\skiResorts.json"
+
+# Set up the test json variables
+with open(".\\Resources\\test_96hrJson.json", "r") as f:
+    test96hrDict = json.load(f)
+
+with open(".\\Resources\\test_360minJson.json", "r") as f:
+    test360minDict = json.load(f)
+
+with open(".\\Resources\\test_realtimeJson.json", "r") as f:
+    testrealtimeDict = json.load(f)
 
 class testSnowReport(unittest.TestCase):
 
@@ -46,7 +54,9 @@ class testSnowReport(unittest.TestCase):
     # This classmethod will also set up an object of our Resort class
     @classmethod
     def setUpClass(cls):
-        pass
+        test_ResortClass = snowReport.Resort("test_Location (Banff)", "96hr", "realtime", "360min")
+        print(test_ResortClass.lat)
+        os.chdir(D_NAME) # Set the directory back to D_NAME because that the snowReport.Resort class changes it's class
 
     # Recreates skiResorts.json file containing the original data before the tests, and then deletes the copy_skiResorts.json file
     @classmethod
@@ -71,7 +81,7 @@ class testSnowReport(unittest.TestCase):
     def test_addNewResort(self):
         snowReport.addNewResort("testResortKey - Calgary", "Calgary", "Canada", "51.0447", "-114.066666", "test")
 
-        with open(testJsonPath, "r") as f:
+        with open(".\\Resources\\test_skiResorts.json", "r") as f:
             resortDictList = json.load(f)
             resortDict = resortDictList["testResortKey - Calgary"]
             self.resortName = resortDict["name"]
@@ -124,20 +134,29 @@ class testSnowReport(unittest.TestCase):
         response = requests.request("GET", URL_NOWCAST, params=querystring)
         assert_true(response.ok)
 
-    # @patch("snowApp.snowReport.Resort.print4DaySnow")
-    # def test_print4DaySnow_True(self):
-    #     with patch.object(snowReport.Resort,"__init__"):
-    #         mockResort = snowReport.Resort(None)
-    #         mockResort.name = "Mock Resort"
-    #         mockResort.isSnow = 1
-    #         mockResort.accumulatedSnow = 2
-    #     assert_true(True)
+# TODO: Call on the function that does the request and then test it
+    def test_request96hr(self):
+        # Mock where it is accessed, not where it used: It is accessed in package snowApp from module snowReport
+        # Here we are trying to mock the requests.request of the package snowApp from the module snowReport
+        # We want to mock the object where it is actually used (it is used in the snowReport module)
+        with patch("snowApp.snowReport.requests.request") as mocked_request:
+            mocked_request.return_value.ok = True            
+            mocked_request.return_value.request = test96hrDict
 
+    def test_request360min(self):
+        with patch("snowApp.snowReport.requests.request") as mocked_request:
+            mocked_request.return_value.ok = True
+            mocked_request.return_value.request = test360minDict
+
+    def test_requestRealtime(self):
+        with patch("snowApp.snowReport.requests.request") as mocked_request:
+            mocked_request.return_value.ok = True
+            mocked_request.return_value.request = testrealtimeDict
         
 # TODO: Mock and unit test requests: https://realpython.com/testing-third-party-apis-with-mocks/
 # TODO: Mock article: https://aaronlelevier.github.io/python-unit-testing-with-magicmock/
-# TODO: Mock artcile: https://medium.com/@george.shuklin/mocking-complicated-init-in-python-6ef9850dd202
-
+# TODO: Mock article: https://medium.com/@george.shuklin/mocking-complicated-init-in-python-6ef9850dd202
+# TODO: Mock article: https://medium.com/@yeraydiazdiaz/what-the-mock-cheatsheet-mocking-in-python-6a71db997832
 
 
 if __name__ == "__main__":
