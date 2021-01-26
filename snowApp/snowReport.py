@@ -102,6 +102,30 @@ def add_new_resort(resort_key, resort_name, country, lat, lon):
 
     return resort_json
 
+# This method lists the set of resort keys and the corresponding resort name that the user can access
+def get_resort_keys():
+    logger.debug('Function call: get_resort_keys() \n')
+    current_dir = os.getcwd()
+    logger.debug('The current directory: {current_dir}')
+
+    if current_dir != D_NAME:
+        os.chdir(D_NAME)
+        logger.debug('Current directory was not as expected.')
+        logger.debug('The current directory was set to: {D_NAME}')
+    else:
+        pass
+
+    # Opens json file to get location parameters
+    with open(SKI_RESORT_JSON, "r") as f:
+        ski_resort_dict = json.load(f)
+
+    ski_resort_keys = ski_resort_dict.keys()
+    ski_resort_names = [ski_resort_dict[resort_key]['name'] for resort_key in ski_resort_keys]
+    resort_keys = {ski_resort_names[i]: ski_resort_keys[i] for i in range(len(ski_resort_names))}
+
+    return resort_keys
+
+    
 
 # Get request modified to only pull the data requested by the user using args
 # Question: are kwargs or args better to use in this situation?
@@ -118,10 +142,10 @@ class Resort():
         logger.debug('Creating new instance of Resort Class. Resort key: {resort_key}')
         # Check if you are in the current directory, if not, set it to the current directory
         
-        currentDir = os.getcwd()
-        logger.debug('The current directory: {currentDir}')
+        current_dir = os.getcwd()
+        logger.debug('The current directory: {current_dir}')
 
-        if currentDir != D_NAME:
+        if current_dir != D_NAME:
             os.chdir(D_NAME)
             logger.debug('Current directory was not as expected.')
             logger.debug('The current directory was set to: {D_NAME}')
@@ -130,13 +154,13 @@ class Resort():
 
         # Opens json file to get location parameters
         with open(SKI_RESORT_JSON, "r") as f:
-            resortDictList = json.load(f)
-            resortDict = resortDictList[resort_key]
+            resort_dict_list = json.load(f)
+            resort_dict = resort_dict_list[resort_key]
 
-        self.name = resortDict["name"]
-        self.lon = resortDict["lon"]
-        self.lat = resortDict["lat"]
-        self.country = resortDict["country"]
+        self.name = resort_dict["name"]
+        self.lon = resort_dict["lon"]
+        self.lat = resort_dict["lat"]
+        self.country = resort_dict["country"]
 
         self.weather_now = {}
         self.weather_6hr = {}
@@ -367,16 +391,8 @@ class Resort():
         logger.debug(f'Returning dictionary containing time:value pair, "self.wind_speed_forecast_now \n')
         return self.wind_speed_forecast_now
 
-resort = Resort('lakeLouise')
-resort.process_requests()
-print(resort.get_temperature_6hr())
-print(resort.get_temperature_96hr())
-print(resort.get_temperature_now())
-print(resort.get_precipitation_type_6hr())
-print(resort.get_precipitation_type_96hr())
-print(resort.get_precipitation_type_now())
-     
-     
+get_resort_keys()
+
 #     def checkSnow(self):
 #         self.snowIn96hrForecast = [(self.weatherJson96hr[i]["precipitation"]["value"] if self.weatherJson96hr[i]["precipitation_type"]["value"] == "snow" else 0) for i in range(0, len(self.weatherJson96hr))]
 #         # Calculates the amount of snow in the next 96hr
